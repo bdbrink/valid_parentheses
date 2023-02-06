@@ -9,7 +9,7 @@ class Solution:
 
         for char in input_string:
             if char in close_to_open:
-                # if the stack is not empty, and the last value[-1] is equal to the first value
+                # if the stack is not empty, and the last value[-1] against our dict
                 if stack and stack[-1] == close_to_open[char]:
                     print(stack[-1])
                     print(close_to_open[char])
